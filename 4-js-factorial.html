@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial fuction</title>
+</head>
+<body>
+    <h1>Factorial function</h1>
+    <script>
+        function factorial(num)
+        {
+            fact=1
+            if(num==0 || num==1){
+            fact=1
+
+             }
+              else
+            {
+                for(i=1;i<=num;i++)
+                fact=fact*i
+              
+            }
+        
+        return fact
+    }
+        num=3
+        fact=factorial(num)
+        console.log( "factorial of" + num + "is" + fact)
+
+        function fatorialrecursion(num){
+            if(n==0)
+            return 1
+            else
+            return num*factorial(num-1)
+        }
+        fact=factorialrecursion(num)
+        console.log(fact)
+
+
+
+        
+    </script>
+</body>
+</html>
